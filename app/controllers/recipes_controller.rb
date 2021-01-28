@@ -10,7 +10,7 @@ class RecipesController < ApplicationController
   end
 
   def create
-    Ingredient.create(
+    Recipe.create(
       rating: params[:rating],
       name: params[:name],
       description: params[:description],
